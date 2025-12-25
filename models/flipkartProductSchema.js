@@ -58,6 +58,11 @@ const FlipkartProductSchema = new mongoose.Schema(
       default: "flipkart",
       index: true,
     },
+
+    priceAlertSent: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );

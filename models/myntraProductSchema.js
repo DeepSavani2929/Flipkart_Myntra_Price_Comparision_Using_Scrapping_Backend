@@ -50,6 +50,11 @@ const MyntraProductSchema = new mongoose.Schema(
       default: "myntra",
       index: true,
     },
+
+    priceAlertSent: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );

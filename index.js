@@ -1,5 +1,6 @@
 require("dotenv").config();
 require("./config/dbConnect.js");
+require("./cron/priceAlertCron.js");
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 4000;
